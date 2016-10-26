@@ -64,13 +64,12 @@ import junit.framework.Assert;
 	
 	@Parameters({"param","param1"})
 	@Test
-	public void title(@Optional String param,@Optional String param1) throws IOException, InterruptedException{
+	public void title(@Optional String param,@Optional String param1) throws IOException{
 
 		driver.get(url);
 		driver.manage().window().maximize();
 		Assert.assertEquals("Addressbook", driver.getTitle());
 		System.out.println("=====>Addressbook Dashboard");
-		Thread.sleep(1000);
 	}
 	
 	@Parameters({"param","param1","param2"})
@@ -103,7 +102,7 @@ import junit.framework.Assert;
 	
 	@Parameters({"param","param1"})
 	@Test
-	public void edit_contacts(@Optional String param,@Optional String param1) throws IOException, InterruptedException{
+	public void monitor(@Optional String param,@Optional String param1) throws IOException, InterruptedException{
 																					
 		WebDriverWait wait =new WebDriverWait(driver,100);
 		

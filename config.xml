@@ -3,7 +3,7 @@
  	<suite suitename="Addressbook" classname="Addressbook">
      		<parameter name="Addressbook" testcase="title" param="" param1="" param2="" dependson=""/>
      		<parameter name="Addressbook" testcase="add_contacts" param="http://104.199.224.192:9006/" param1="2000" param2="Test" dependson=""/>
-     		<parameter name="Addressbook" testcase="monitor" param="" param1="" param2="" dependson=""/>
+     		<parameter name="Addressbook" testcase="edit_contacts" param="" param1="" param2="" dependson=""/>
 	</suite>
 </XmltoJava>
 
