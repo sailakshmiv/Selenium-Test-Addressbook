@@ -45,8 +45,8 @@ import junit.framework.Assert;
 	ExtentTest test = Suite.test;
 	Suite suite = new Suite();
 	WebDriver driver = suite.newDriver();
-	//static String url = "http://" + System.getProperty("APP_ENDPOINT");
-	static String url = "http://104.199.158.27:9006/";
+	static String url = "http://" + System.getProperty("APP_ENDPOINT");
+	//static String url = "http://104.199.158.27:9006/";
 	@Parameters({"suiteName"})
 	@BeforeMethod
 	 public void createreport(ITestContext arg0,@Optional String suiteName){
