@@ -79,7 +79,7 @@ import junit.framework.Assert;
 	public void add_contacts(@Optional String param,@Optional String param1,@Optional String param2) throws InterruptedException {
 		
 		WebDriverWait wait =new WebDriverWait(driver,100);
-		
+		driver.navigate().refresh();
 		for(int i=0; i<=1 ; i++){
 			int j = i+1;
 			wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='ROOT-2521314']/div/div[2]/div/div/div/div/div[1]/div/div/div[2]/div")))).click();
@@ -107,7 +107,7 @@ import junit.framework.Assert;
 	public void edit_contacts(@Optional String param,@Optional String param1) throws IOException, InterruptedException{
 																					
 		WebDriverWait wait =new WebDriverWait(driver,100);
-		
+		driver.navigate().refresh();
 		for(int i=0; i<=1 ; i++){
 			int j = i+1;											
 			wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='ROOT-2521314']/div/div[2]/div/div/div/div/div[2]/div/div[3]/table/tbody/tr["+j+"]/td[1]")))).click();
